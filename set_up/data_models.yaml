@@ -1,0 +1,23 @@
+name: data_models
+channels:
+  - defaults
+  - anaconda
+  - pyviz
+  - plotly
+dependencies:
+  - python=3.6
+  - yaml
+  - pyyaml
+  - openpyxl
+  - psycopg2
+  - pymssql
+  - sqlalchemy
+  - pyodbc
+  - pandas
+  - pip
+  - pip:
+    - python-dateutil
+    - pytz
+    - pyparsing
+    - cairocffi
+    - xlrd
