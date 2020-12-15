@@ -25,8 +25,8 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install dependencies
       run: |
-        $CONDA/bin/conda env update --file set_up/data_models.yml
-        $CONDA activate data_models
+        $CONDA/bin/conda env update --file set_up/data_models.yml --name base
+#        $CONDA activate base
 #        python -m pip install --upgrade pip
 #        python -m pip install flake8 pytest
 #        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
