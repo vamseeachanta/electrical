@@ -26,8 +26,6 @@ jobs:
     - name: Install dependencies
       run: |
         $CONDA/bin/conda env update --file set_up/data_models.yml --name base
-        $CONDA activate base
-        pytest
 #        $CONDA activate base
 #        python -m pip install --upgrade pip
 #        python -m pip install flake8 pytest
@@ -40,5 +38,5 @@ jobs:
 #        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        pip install pytest
-        pytest
+        conda install pytest
+        $CONDA/bin/pytest
