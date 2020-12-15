@@ -26,6 +26,7 @@ jobs:
     - name: Install dependencies
       run: |
         $CONDA/bin/conda env update --file set_up/data_models.yml --name base
+        $CONDA activate base
         pytest
 #        $CONDA activate base
 #        python -m pip install --upgrade pip
